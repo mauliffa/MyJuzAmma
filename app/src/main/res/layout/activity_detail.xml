@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:paddingTop="110dp"
+    android:paddingBottom="50dp"
+    android:background="@drawable/bg_detail"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_nama"
+        android:textSize="25sp"
+        android:textColor="#432818"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/detail_arti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_nama"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="275dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_pict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/anak" />
+    </ScrollView>
+</LinearLayout>
